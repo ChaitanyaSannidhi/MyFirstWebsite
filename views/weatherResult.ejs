@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather in <%= weather.location.name %></title>
+  <link rel="stylesheet" href="weatherResult.css">
+</head>
+<body>
+  <h1>Weather in <%= weather.location.name %></h1>
+  <div class="weather-info">
+    <p>Temperature: <%= weather.current.temp_c %>°C</p>
+    <p>Condition: <%= weather.current.condition.text %></p>
+  </div>
+  <a href="/weather">Check another city</a>
+</body>
+</html>
